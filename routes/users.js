@@ -25,7 +25,7 @@ router.post('/',
             //findOne - mongoose function
             let user = await User.findOne({ email });
             if (user) {
-                return res.status(400).json({ msg: "user already exsist" });
+                return res.status(400).json({ msg: "User already exsist" });
             }
             user = new User({
                 name,
